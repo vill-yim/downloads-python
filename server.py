@@ -12,7 +12,6 @@ def download_video():
     if not url:
         return {"message": "URL no proporcionada"}, 400
 
-    # Configuración de opciones para yt-dlp
     ydl_opts = {
         "format": "bestaudio/best",
         "outtmpl": "%(title)s.%(ext)s",
